@@ -179,11 +179,12 @@ public class SelfCardPage extends Keywords {
 	
 	By MyBillTitle = By.xpath("//span[contains(text(),'My Bills')]");
 	By ShowingAllTitle = By.xpath("//span[contains(text(),'Showing all')]");
-	@FindBy(xpath = "//span[contains(text(),'My Bills')]")
+	@FindBy(xpath = "//*[contains(text(),'My Bills')]")
 	WebElement MyBill;
 
 	public void setMyBill() {
 		waitForElementVisible(driver, MyBillTitle);
+		Setting.click();
 		MyBill.click();
 		waitForElementVisible(driver, ShowingAllTitle);
 	}

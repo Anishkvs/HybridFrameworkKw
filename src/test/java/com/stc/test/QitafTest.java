@@ -22,8 +22,9 @@ public class QitafTest extends TestRunner {
 		SelfCardPage selfcare = new SelfCardPage(driver);
 		QitafPage qitaf = new QitafPage(driver);
 		LoginPage login = new LoginPage(driver);
-        ArrayList<String> data = new Keywords().getData("PostPaidLoginTwo");
-		login.PostPaidLoginTwo(data.get(1).toString(), data.get(2).toString());
+		//PostPaidLoginTwo
+        ArrayList<String> data = new Keywords().getData("PostPaidLogin");
+		login.PostPaidLogin(data.get(1).toString(), data.get(2).toString());
 		selfcare.setUnlock();
 		selfcare.setQitaf();
 		qitaf.setQitafUser();

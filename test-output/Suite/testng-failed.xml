@@ -7,13 +7,34 @@
   <test thread-count="5" name="Parallel Tests Edge(failed)">
     <parameter name="browserName" value="edge"/>
     <classes>
-      <class name="com.stc.test.GetNewLine_Guest2">
+      <class name="com.stc.test.ProfileTest">
         <methods>
-          <include name="SC_20_Guest_Mobile_PostPaidScenario"/>
           <include name="tearDown"/>
+          <include name="SC_18_Setting"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.stc.test.GetNewLine_Guest2 -->
+      </class> <!-- com.stc.test.ProfileTest -->
+      <class name="com.stc.test.GetNewLine_Guest3">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SC_20_Guest_Internet_PrepaidScenario"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.GetNewLine_Guest3 -->
+      <class name="com.stc.test.User_GetNewLineTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SC_10_User_Internet_PrePaidScenario"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.User_GetNewLineTest -->
+      <class name="com.stc.test.PayTwoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SC_07_Prepaid_Pay"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.PayTwoTest -->
     </classes>
   </test> <!-- Parallel Tests Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -5,6 +5,19 @@
 	<groupId>com.frame</groupId>
 	<artifactId>HybridFrameworkPoC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
+	<build>
+        <finalName>MavenWebappProject</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+        </plugins>
+    </build>
+    
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.11</maven.compiler.source>
@@ -76,6 +89,22 @@
 			<version>2.27.0</version>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.4.0</version>
+		</dependency>
 
+ <!-- Add any dependencies you need here -->
+        <!-- For example, for JSP or Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+         <scope>provided</scope>
+        </dependency>
+        
 	</dependencies>
 </project>

@@ -55,7 +55,7 @@ public class QuickPayPage extends Keywords {
 		Thread.sleep(1000);
 	}
 
-	@FindBy(xpath = "(//button)[position()=32]")
+	@FindBy(xpath = "(//button)[position()=31]")
 	WebElement Continue;
 
 	public void setContinue() throws InterruptedException {
@@ -84,7 +84,7 @@ public class QuickPayPage extends Keywords {
 		ContinueTextTwo.click();
 	}
 
-	@FindBy(xpath = "(//button)[position()=37]")
+	@FindBy(xpath = "(//button)[position()=36]")
 	WebElement ContinueTwo;
 
 	public void setContinueTwo() {

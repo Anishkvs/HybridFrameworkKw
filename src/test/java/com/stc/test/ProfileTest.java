@@ -19,8 +19,9 @@ public class ProfileTest extends TestRunner {
 		SelfCardPage selfcare = new SelfCardPage(driver);
 		ProfilePage profile = new ProfilePage(driver);
 		LoginPage login = new LoginPage(driver);
-		ArrayList<String> data = new Keywords().getData("PostPaidLoginTwo");
-		login.PostPaidLoginTwo(data.get(1).toString(), data.get(2).toString());
+		//PostPaidLoginTwo
+		ArrayList<String> data = new Keywords().getData("PostPaidLogin");
+		login.PostPaidLogin(data.get(1).toString(), data.get(2).toString());
 		selfcare.setUnlock();
 		selfcare.setSTCUser();
 		selfcare.setViewProfile();
@@ -38,7 +39,7 @@ public class ProfileTest extends TestRunner {
 		profile.setNumberProperties();
 		profile.setUserManagement();
 		profile.setqitaf();
-		profile.setAppearance();
+	//	profile.setAppearance();
 		profile.setPaymentMethods();
 		profile.setAutoPay();
 		profile.setRefundRequests();

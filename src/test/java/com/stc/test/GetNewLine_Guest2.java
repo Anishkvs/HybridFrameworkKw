@@ -20,6 +20,7 @@ public class GetNewLine_Guest2 extends TestRunner{
 		GetNewLinePage newLine = new GetNewLinePage(driver);
     	home.waitForPageLoad();
     	newLine.setGetNewLine();
+    	newLine.browserRefresh();
     	newLine.setMobPostPaid();
     	newLine.setAlwaysOn();
   //  	newLine.setYouthPlanTab();

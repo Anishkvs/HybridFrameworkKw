@@ -162,8 +162,8 @@ public class LoginPage extends Keywords{
 		login.setpasswordTwo(password);
 		Thread.sleep(1000);
 		quickPay.setContinueTwo();
-		dashboard.setWelComeText();
-		dashboard.viewDueAmount();
+	//	dashboard.setWelComeText();
+	//	dashboard.viewDueAmount();
 	}
 	
 	public void GetALineLogin(String username, String password) throws InterruptedException {

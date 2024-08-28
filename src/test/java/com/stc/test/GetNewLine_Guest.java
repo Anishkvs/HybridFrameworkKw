@@ -23,6 +23,7 @@ public class GetNewLine_Guest extends TestRunner{
 		GetNewLinePage newLine = new GetNewLinePage(driver);
     	home.waitForPageLoad();
     	newLine.setGetNewLine();
+    	newLine.browserRefresh();
     	newLine.setMobPrePaid();
     	newLine.setKD();
     	newLine.setConfirmPlan();

@@ -25,7 +25,7 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	public ExtentSparkReporter spark;
-	// String reportPath;
+	 //String reportPath;
 	String reportPath = System.getProperty("user.dir") + "/Reports/";
 
 	/**

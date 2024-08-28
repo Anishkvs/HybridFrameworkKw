@@ -16,15 +16,21 @@ public class GetNewLinePage extends Keywords{
 	}
 	
 	//@FindBy(xpath="(//button[@class='StcButton-styles__wrapper___2taQ- StcButton-styles__sizeSmall___2Y9s3 StcButton-styles__primary___3wMtY StcCwsCardImage-styles__bottomLink___239Ml']/span[contains(text(),'Buy Now')])[1]")
-	@FindBy(xpath="(//span[.='Buy Now'])[6]")
+	@FindBy(xpath="(//span[.='Buy Now'])[8]")
 	WebElement BuyNow;
 	
 	public void setGetNewLine() throws InterruptedException {
-      scroll(driver, 1500);
-      Thread.sleep(1000);
-      scroll(driver, 100);
-      BuyNow.click();
+		Thread.sleep(8000);
+		scroll(driver, 1500);
+        Thread.sleep(1000);
+  //    scroll(driver, 100);
+        BuyNow.click();
 	}
+	public void browserRefresh() throws InterruptedException {
+		Thread.sleep(10000);
+		driver.navigate().refresh();
+	//	Thread.sleep(6000);
+		}
 	public void setGetNewLineSecond() throws InterruptedException {
 	      BuyNow.click();
 		}
@@ -92,14 +98,14 @@ public class GetNewLinePage extends Keywords{
 		}
 		
 		By ChooseNumberPage = By.xpath("//h5[contains(text(),'Choose your new number')]");
-		@FindBy(xpath="//span[contains(text(),'Purple')]")
+		@FindBy(xpath="(//span[contains(text(),'Purple')])[1]")
 		WebElement Purple;
 		@FindBy(xpath = "//span[contains(text(),'Continue')]")
 		WebElement ContinueText;
 		
 		public void setPurple() throws InterruptedException {
 			waitForElementVisible(driver, ChooseNumberPage);
-			Thread.sleep(2000);
+			Thread.sleep(8000);
 			Purple.click();
 			ContinueText.click();
 		}
@@ -184,7 +190,7 @@ public class GetNewLinePage extends Keywords{
 		
 		public void setPayKD() throws InterruptedException {
 			waitForElementVisible(driver, OrderSummaryPage);
-			Thread.sleep(1000);
+			Thread.sleep(8000);
 			PayKD.click();
 		}
 		
@@ -297,11 +303,11 @@ public class GetNewLinePage extends Keywords{
 			waitForElementVisible(driver, PackagePage);
 			scrollUp(driver, 1500);
 			Thread.sleep(1000);
-			scroll(driver, 500);
+			scroll(driver, 1000);
 			Thread.sleep(1000);
-			scroll(driver, 500);
-			Thread.sleep(1000);
-			scroll(driver, 200);
+	   // 	scroll(driver, 500);
+	//		Thread.sleep(1000);
+	//		scroll(driver, 200);
 			Thread.sleep(1000);
 	//		scroll(driver, 200);
 			Accept.click();
@@ -345,9 +351,13 @@ public class GetNewLinePage extends Keywords{
 		public void setAddressDetails() throws InterruptedException {
 			waitForElementVisible(driver, CheckOutPage);
 			scroll(driver, 1000);
+			Thread.sleep(2000);
 			BuildingNumber.sendKeys("1");
+			Thread.sleep(2000);
+			scroll(driver, 200);
+			Thread.sleep(2000);
 			Continue.click();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 		}
 	//	By CheckOutPage = By.xpath("//h2[contains(text(),'Checkout')]");
 

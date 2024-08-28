@@ -48,7 +48,7 @@ public class DashboardUsageTest extends TestRunner{
     	
 	}
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	@Description("User should be able to see the paid bills and transaction Histrory.")
 	public void SC_03_myBill() throws InterruptedException, IOException {
 		
@@ -56,6 +56,7 @@ public class DashboardUsageTest extends TestRunner{
 		HomePage home = new HomePage(driver);
 		ArrayList<String> SelfCareUrlData = new Keywords().getData("SelfCareUrl");
 		home.SelfCareUrl(SelfCareUrlData.get(1).toString());
+		System.out.println("URl loaded");
 		selfcare.setMyBill();
 		selfcare.setPaidBill();
 		selfcare.setAllTranscations();

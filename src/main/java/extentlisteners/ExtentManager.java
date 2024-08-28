@@ -1,9 +1,18 @@
 package extentlisteners;
 
 import java.io.File;
+import java.io.IOException;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -40,26 +49,36 @@ public class ExtentManager {
 	        return extent;
 	    }
 
-	    
-	  /*  public static String screenshotPath;
-		public static String screenshotName;
-		
-		public static void captureScreenshot() {
+	    //
+		    public static String screenshotPath;
+		    public static String screenshotName;
 
-			File scrFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+		    public static void captureScreenshot() throws WebDriverException, SQLException {
+		        File scrFile = ((TakesScreenshot) DriverManager.getDriver(reportPath)).getScreenshotAs(OutputType.FILE);
 
-			Date d = new Date();
-			screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+		        // Use a specific date format for the filename
+		        String dateFormat = "yyyy-MM-dd_HH-mm-ss";
+		        SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+		        Date d = new Date();
+		        screenshotName = sdf.format(d) + ".jpg";
 
-			try {
-				FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "\\reports\\" + screenshotName));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		        // Define the screenshot directory
+		        String screenshotDir = System.getProperty("user.dir") + "\\Reports\\";
 
-		
-		}*/
+		        // Ensure the directory exists
+		        File dir = new File(screenshotDir);
+		        if (!dir.exists()) {
+		            dir.mkdirs();
+		        }
+
+		        try {
+		            // Save the screenshot to the specified directory
+		            FileUtils.copyFile(scrFile, new File(screenshotDir + screenshotName));
+		        } catch (IOException e) {
+		            e.printStackTrace(); // Consider logging this exception
+		        }
+		    }
+		}
 	
 
-	}
+	

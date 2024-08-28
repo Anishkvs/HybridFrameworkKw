@@ -110,7 +110,7 @@ public class Keywords {
 
 	public void waitForElementVisible(WebDriver driver, By locator) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 			element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

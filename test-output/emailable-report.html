@@ -8,20 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Parallel Tests Edge</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,376</td><td></td><td></td></tr>
+<tr><th colspan="8">Failed suite [Suite]</th></tr>
+<tr><td><a href="#t0">Parallel Tests Edge(failed)</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">197,893</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Tests Edge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.stc.test.GetNewLine_Guest2</td><td><a href="#m0">SC_20_Guest_Mobile_PostPaidScenario</a></td><td rowspan="1">1721046160262</td><td rowspan="1">13833</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Suite]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Parallel Tests Edge(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.stc.test.GetNewLine_Guest3</td><td><a href="#m0">SC_20_Guest_Internet_PrepaidScenario</a></td><td rowspan="1">1724587734853</td><td rowspan="1">42227</td></tr><tr class="failedodd"><td rowspan="1">com.stc.test.ProfileTest</td><td><a href="#m1">SC_18_Setting</a></td><td rowspan="1">1724587716546</td><td rowspan="1">10129</td></tr><tr class="failedeven"><td rowspan="1">com.stc.test.User_GetNewLineTest</td><td><a href="#m2">SC_10_User_Internet_PrePaidScenario</a></td><td rowspan="1">1724587785147</td><td rowspan="1">40978</td></tr><tr><th colspan="4">Parallel Tests Edge(failed) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.stc.test.PayTwoTest</td><td><a href="#m3">SC_07_Prepaid_Pay</a></td><td rowspan="1">1724587833798</td><td rowspan="1">71356</td></tr></tbody>
 </table>
-<h2>Parallel Tests Edge</h2><h3 id="m0">com.stc.test.GetNewLine_Guest2#SC_20_Guest_Mobile_PostPaidScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=126.0.2592.102)
+<h2>Parallel Tests Edge(failed)</h2><h3 id="m0">com.stc.test.GetNewLine_Guest3#SC_20_Guest_Internet_PrepaidScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[contains(text(),&apos;KD&apos;)])[1]&quot;}
+  (Session info: MicrosoftEdge=127.0.2651.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [15b44d162531b4af329f48850156ecaa, findElement {using=xpath, value=(//span[contains(text(),&apos;Postpaid&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.102, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62899}, msedge: {msedgedriverVersion: 126.0.2592.102 (720b5d614be..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62899/devtoo..., se:cdpVersion: 126.0.2592.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 15b44d162531b4af329f48850156ecaa
+Command: [8eae9eff61ca3e714f51a8daff641e56, findElement {value=(//span[contains(text(),&apos;KD&apos;)])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59407}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59407/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8eae9eff61ca3e714f51a8daff641e56
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -36,9 +36,64 @@ Session ID: 15b44d162531b4af329f48850156ecaa
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at com.stc.pages.GetNewLinePage.setMobPostPaid(GetNewLinePage.java:39)
-	at com.stc.test.GetNewLine_Guest2.SC_20_Guest_Mobile_PostPaidScenario(GetNewLine_Guest2.java:23)
+	at com.stc.pages.GetNewLinePage.setKDOne(GetNewLinePage.java:128)
+	at com.stc.test.GetNewLine_Guest3.SC_20_Guest_Internet_PrepaidScenario(GetNewLine_Guest3.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.stc.test.ProfileTest#SC_18_Setting</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Settings&apos;)]&quot;}
+  (Session info: MicrosoftEdge=127.0.2651.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6d7a260fbd3973b27275371a7d2ec5c3, findElement {value=//span[contains(text(),&apos;Settings&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59336}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59336/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d7a260fbd3973b27275371a7d2ec5c3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.stc.pages.SelfCardPage.setSetting(SelfCardPage.java:260)
+	at com.stc.test.ProfileTest.SC_18_Setting(ProfileTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.stc.test.User_GetNewLineTest#SC_10_User_Internet_PrePaidScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[contains(text(),&apos;KD&apos;)])[1]&quot;}
+  (Session info: MicrosoftEdge=127.0.2651.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d84fe9ebe9de5ad1b1b51ca1549a874f, findElement {value=(//span[contains(text(),&apos;KD&apos;)])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.105, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49950}, msedge: {msedgedriverVersion: 127.0.2651.105 (e2354f41f84..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49950/devtoo..., se:cdpVersion: 127.0.2651.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d84fe9ebe9de5ad1b1b51ca1549a874f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.stc.pages.GetNewLinePage.setKDOne(GetNewLinePage.java:128)
+	at com.stc.test.User_GetNewLineTest.SC_10_User_Internet_PrePaidScenario(User_GetNewLineTest.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.stc.test.PayTwoTest#SC_07_Prepaid_Pay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

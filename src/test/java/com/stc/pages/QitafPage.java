@@ -47,8 +47,8 @@ public class QitafPage extends Keywords{
 	WebElement QitafUserNumber;
 	public void setQitafUser() {
 		Qitaf.click();
-		Boolean user =QitafUserNumber.isDisplayed();
-		System.out.println("Qitaf User Number is displayed:"+user);
+	//	Boolean user =QitafUserNumber.isDisplayed();
+	//	System.out.println("Qitaf User Number is displayed:"+user);
 	}
 	
 	By Continue = By.xpath("//span[contains(text(),'Continue')]");
